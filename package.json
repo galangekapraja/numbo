@@ -1,0 +1,17 @@
+{
+  "name": "numbo",
+  "version": "1.0.0",
+  "description": "Numbo: math adventures for grades 1-6, with Bobby. A single-page web app with a recorded read-aloud voice.",
+  "private": true,
+  "license": "MIT",
+  "author": "galangekapraja (https://github.com/galangekapraja)",
+  "homepage": "https://galangekapraja.github.io/numbo/",
+  "repository": { "type": "git", "url": "git+https://github.com/galangekapraja/numbo.git" },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:lite": "node scripts/build.js --no-audio",
+    "test": "node tests/generators.test.js && node tests/voice-coverage.test.js && node tests/smoke.test.js",
+    "serve": "node scripts/serve.js"
+  },
+  "engines": { "node": ">=18" }
+}

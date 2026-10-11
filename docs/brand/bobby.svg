@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 130" role="img" aria-label="Bobby, the Numbo mascot"><g stroke="#1d1747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M42 40 L33 15" fill="none"/><circle cx="32" cy="11" r="7" fill="#d93844"/>
+<path d="M78 40 L87 15" fill="none"/><circle cx="88" cy="11" r="7" fill="#2f6fe8"/>
+<ellipse cx="42" cy="119" rx="15" ry="8" fill="#ff8a3d"/><ellipse cx="78" cy="119" rx="15" ry="8" fill="#ff8a3d"/>
+<ellipse cx="17" cy="82" rx="9" ry="15" transform="rotate(18 17 82)" fill="#ffc933"/><ellipse cx="103" cy="82" rx="9" ry="15" transform="rotate(-18 103 82)" fill="#ffc933"/>
+<ellipse cx="60" cy="80" rx="42" ry="40" fill="#ffc933"/>
+<ellipse cx="60" cy="94" rx="24" ry="18" fill="#fff3b0" stroke="none"/>
+<circle cx="45" cy="70" r="11" fill="#fff"/><circle cx="75" cy="70" r="11" fill="#fff"/>
+<circle cx="47" cy="71" r="5" fill="#1d1747" stroke="none"/><circle cx="73" cy="71" r="5" fill="#1d1747" stroke="none"/>
+<circle cx="30" cy="88" r="6" fill="#ff8fa3" stroke="none"/><circle cx="90" cy="88" r="6" fill="#ff8fa3" stroke="none"/>
+<path d="M48 90 Q60 102 72 90" fill="none"/></g></svg>

@@ -1,0 +1,67 @@
+<div class="sky" aria-hidden="true">
+  <span class="cloud" style="top:7%;--t:90s;--d:-10s"></span>
+  <span class="cloud" style="top:22%;--t:120s;--d:-70s;transform:scale(.8)"></span>
+  <i class="fl circ" style="--x:6%;--s:34px;--c:var(--red);--t:28s;--d:-6s"></i>
+  <i class="fl star" style="--x:18%;--s:44px;--c:var(--yellow);--t:34s;--d:-20s"></i>
+  <i class="fl sq" style="--x:30%;--s:30px;--c:var(--blue);--t:26s;--d:-12s"></i>
+  <i class="fl tri" style="--x:44%;--s:40px;--c:var(--green);--t:38s;--d:-30s"></i>
+  <i class="fl circ" style="--x:56%;--s:26px;--c:var(--purple);--t:30s;--d:-2s"></i>
+  <i class="fl star" style="--x:68%;--s:36px;--c:var(--orange);--t:32s;--d:-16s"></i>
+  <i class="fl sq" style="--x:80%;--s:38px;--c:var(--teal);--t:36s;--d:-24s"></i>
+  <i class="fl tri" style="--x:92%;--s:32px;--c:var(--red);--t:27s;--d:-9s"></i>
+</div>
+
+<div class="storylayer" id="story" role="dialog" aria-modal="true" aria-label="Numbo story" hidden></div>
+
+<div class="page">
+  <header class="appbar">
+    <h1 class="logo" id="logo"><span class="vh">Numbo</span></h1>
+    <button type="button" class="tool mapbtn" id="mapBtn" data-nav="home" hidden aria-label="Home"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</button>
+    <button type="button" class="tool gradebtn" id="gradeBtn" data-nav="grade" aria-label="Change grade" hidden><b id="gradeTxt">Grade 3</b><span class="chg">Change</span></button>
+    <span class="score" id="score"></span>
+    <button type="button" class="tool gearbtn" id="setBtn" aria-expanded="false" aria-controls="settings" aria-label="Settings"><svg class="ico ln" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg><span>Settings</span></button>
+  </header>
+
+  <section class="settings" id="settings" aria-label="Settings" hidden>
+    <h2>Settings</h2>
+    <div class="toolrow">
+      <button type="button" class="tool" id="soundBtn" aria-pressed="true">Sound</button>
+      <button type="button" class="tool" id="bigBtn" aria-pressed="false">Big text</button>
+      <button type="button" class="tool" id="themeBtn" aria-pressed="false">Night mode</button>
+      <button type="button" class="tool" id="storyBtn">Watch the story</button>
+      <button type="button" class="tool" id="closeSet">Close</button>
+    </div>
+    <div class="toolrow voicerow" id="voiceRow">
+      <button type="button" class="tool" id="readBtn" aria-pressed="true">Auto-read (Grades 1–2)</button>
+      <button type="button" class="tool" id="voiceTest">Hear it</button>
+    </div>
+    <p id="sndDiag" class="diag" aria-live="polite" style="margin:8px 0 0;font-size:.85rem;color:var(--ink-soft)"></p>
+  </section>
+
+  <main>
+    <section id="sc-home" data-screen aria-label="Map">
+      <div class="hero">
+        <div class="hero-text"><p class="tagline">Math adventures · Grades 1–6</p><p class="lead" id="lead"></p></div>
+        <div class="buddy" id="buddy" aria-hidden="true"></div>
+      </div>
+      <section class="shelf" id="shelf" aria-label="Bobby's Number Shelf">
+        <div class="shelf-head"><h2 class="sh-title">Bobby's Number Shelf</h2></div>
+        <div class="slots" id="slots"></div>
+        <p class="sh-note" id="shNote"></p>
+      </section>
+      <h2 class="maphead" id="mapH" tabindex="-1">Where do you want to go?</h2>
+      <p class="mapsub">Tap a place to start.</p>
+      <nav class="tabs" id="tabs" aria-label="Choose a place"></nav>
+    </section>
+    <section class="card" id="gradeScr" data-screen aria-label="Choose your grade" hidden></section>
+    <section class="card" id="place" data-screen aria-label="Place" hidden></section>
+    <section class="card" id="learn" data-screen aria-label="Lesson" hidden></section>
+    <section class="card" id="practice" data-screen aria-label="Practice" hidden></section>
+  </main>
+
+  <footer class="brandfoot">
+    <div class="mini-logo" id="footLogo" aria-hidden="true"></div>
+    <p>Math adventures for grades 1–6, with Bobby.</p>
+  </footer>
+  <p class="foot">Stars, nicknames and display settings are saved only in this browser. Practice questions are shuffled every time you start.</p>
+</div>

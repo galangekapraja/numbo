@@ -1,0 +1,20 @@
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm run build
+      - run: npm test
+      - name: End-to-end checks (Chromium)
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+          python3 tests/e2e/audio.py
+          python3 tests/e2e/responsive.py
+          python3 tests/e2e/a11y.py
